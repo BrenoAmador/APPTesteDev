@@ -2,11 +2,11 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route, Outlet } from "react-router";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@coreui/coreui/dist/css/coreui.min.css";
-import App from "./app";
-import Dashboard from "./pages/dashboard";
+import App from "./App";
+import Dashboard from "./pages/Dashboard";
 import Gerador from "./pages/Gerador";
 import Sidebar from "./components/Sidebar";
-import SecurityRoute from "./pages/SecurityRoute"; // <-- seu PrivateRoute
+import SecurityRoute from "./pages/SecurityRoute";
 
 function LayoutComSidebar() {
   return (
