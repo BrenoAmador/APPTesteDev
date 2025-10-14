@@ -20,7 +20,7 @@ function Gerador() {
     setMessage("Gerando arquivo...");
     setError(false);
     try {
-      const response = await axios.get(apiUrl + "excel/" + quantidade, {
+      const response = await axios.get(apiUrl + "gerador/excel/" + quantidade, {
         headers: {
           Authorization: `Bearer ${localStorage.getItem("token")}`,
         },
@@ -54,7 +54,7 @@ function Gerador() {
     setError(false);
     try {
       await axios.post(
-        +"email/enviar/",
+        apiUrl +"email/enviar/",
         {},
         {
           headers: {
